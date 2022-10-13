@@ -1,0 +1,14 @@
+<p><%= @letters %></p>
+<p>Your word: <%= @word %></p>
+
+<p>Array: <%= @letters %></p>
+<p>Your word in Array?: <%= @letter_in_grid %></p>
+<%# <p>Your word is english?: <%= @english_word %></p> %>
+
+<% if @english_word %>
+<p>Congrats your word in dictionary </p>
+<% else %>
+<p>Try again</p>
+<% end  %>
+
+<%= link_to "Go Back to New", new_path %>

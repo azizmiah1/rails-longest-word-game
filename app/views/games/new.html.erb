@@ -1,0 +1,10 @@
+<p><%= @letters %></p>
+
+<form action="score" method="POST" data-turbo="false">
+<input type="text" id="word" name="word">
+<%# <input type="text" id="second_word" name="second_word"> %>
+<input type="submit">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<%= hidden_field_tag :letters, @letters %>
+<%# <%= hidden_field_tag :third, @third %>
+</form>
